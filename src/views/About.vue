@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import bus from '../bus';
+import bus from "../bus";
 
 export default {
   name: "About",
-  created: function () {
-      bus.$emit('toggleLoading', false);
+  created: function() {
+    bus.$emit("toggleLoading", false);
   }
 };
 </script>
