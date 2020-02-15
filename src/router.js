@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Home from "./views/Home";
 import Feed from "./views/Feed";
+import About from "./views/About";
 import FourOFour from "./views/FourOFour";
 import Post from "./views/Post";
 import bus from "./bus";
@@ -9,9 +11,19 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    name: "home",
+    name: "blog",
     path: "/",
     redirect: "/posts"
+  },
+  {
+    name: "about",
+    path: "/about",
+    component: About
+  },
+  {
+    name: "home",
+    path: "/home",
+    component: Home
   },
   {
     name: "posts",

@@ -10,11 +10,11 @@ const CONSTANTS = {
 
 module.exports = {
   pluginOptions: {
-    "style-resources-loader": {
-      preProcessor: "scss",
+    'style-resources-loader': {
+      preProcessor: 'scss',
       patterns: [
-        path.resolve(__dirname, "./src/assets/scss/_variables.scss"),
-        path.resolve(__dirname, "./src/assets/scss/_mixins.scss")
+        'D:\\Vue\\vue-blog\\src\\assets\\scss\\_variables.scss',
+        'D:\\Vue\\vue-blog\\src\\assets\\scss\\_mixins.scss'
       ]
     }
   },

@@ -1,14 +1,22 @@
 <template>
   <footer>
-    Made by <a href="https://macarthur.me">Alex MacArthur</a>
-    //
-    See <a href="https://www.github.com/alexmacarthur/wp-vue">WP Vue on Github</a>.
+    Data retrieved from <a :href="sourceURL">{{ sourceURL }}</a>
   </footer>
 </template>
 
 <script>
   export default {
-    name: 'Foot'
+    name: 'Foot',
+  computed: {
+      splitEndpoint: function () {
+        return this.$store.state.endpoint.split('/')
+      },
+
+      sourceURL: function () {
+        return this.splitEndpoint[0] + this.splitEndpoint[1] + this.splitEndpoint[2];
+      }
+    }
+
   }
 </script>
 
