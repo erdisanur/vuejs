@@ -19,13 +19,11 @@
 </template>
 
 <script>
+/* eslint-disable no-alert, no-console, no undef */
 import bus from "../bus";
 import ajax from "../mixins/ajax";
 import Card from "../components/Card";
 import Pagination from "../components/Pagination";
-
-let POSTS_PER_PAGE;
-  
 
 export default {
   name: "Feed",
