@@ -24,6 +24,9 @@ import ajax from "../mixins/ajax";
 import Card from "../components/Card";
 import Pagination from "../components/Pagination";
 
+let POSTS_PER_PAGE,
+  
+
 export default {
   name: "Feed",
 
