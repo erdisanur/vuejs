@@ -8,8 +8,6 @@ module.exports = {
     parser: "babel-eslint"
   },
   rules: {
-    "no-async-promise-executor":
-      process.env.NODE_ENV === "production" ? "error" : "off",
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-undef": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-async-promise-executor":
