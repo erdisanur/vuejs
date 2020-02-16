@@ -19,10 +19,10 @@ module.exports = {
     }
   },
   pages: {
-      app: {
-        entry: path.resolve(__dirname, "./src/main.js"),
-        template: path.resolve(__dirname, "./public/index.html")
-      }
+    app: {
+      entry: path.resolve(__dirname, "./src/main.js"),
+      template: path.resolve(__dirname, "./public/index.html")
+    }
   },
   configureWebpack: {
     plugins: [new webpack.DefinePlugin(CONSTANTS)]
