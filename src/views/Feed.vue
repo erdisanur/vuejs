@@ -19,7 +19,6 @@
 </template>
 
 <script>
-/* eslint-disable no-alert no-console no-undef: 0 */
 import bus from "../bus";
 import ajax from "../mixins/ajax";
 import Card from "../components/Card";
